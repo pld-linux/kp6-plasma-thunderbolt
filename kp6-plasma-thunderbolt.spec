@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.3.0
+%define		kdeplasmaver	6.3.1
 %define		qtver		5.15.2
 %define		kpname		plasma-thunderbolt
 %define		kf6ver		5.39.0
 
 Summary:	plasma-nm
 Name:		kp6-%{kpname}
-Version:	6.3.0
+Version:	6.3.1
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	f02084f48f62c3cea52e879c8b90e2db
+# Source0-md5:	e2c791092a2d9909640357b101b66183
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= 5.15.0
 BuildRequires:	Qt6DBus-devel >= 5.15.0
