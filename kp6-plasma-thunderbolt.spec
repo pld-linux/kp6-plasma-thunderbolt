@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.4.4
+%define		kdeplasmaver	6.4.5
 %define		qtver		5.15.2
 %define		kpname		plasma-thunderbolt
 %define		kf6ver		5.39.0
 
 Summary:	plasma-nm
 Name:		kp6-%{kpname}
-Version:	6.4.4
+Version:	6.4.5
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	5e2c2591807a58cf6cdf4e884c3dd4be
+# Source0-md5:	528bb3eb8b63ca732083657c6d6470c2
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= 5.15.0
 BuildRequires:	Qt6DBus-devel >= 5.15.0
@@ -40,6 +40,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	xz
 Requires(post,postun):	desktop-file-utils
+%requires_eq_to Qt6Core Qt6Core-devel
 Obsoletes:	kp5-%{kpname} < 6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
