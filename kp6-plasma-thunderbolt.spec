@@ -53,6 +53,13 @@ computer. There's also a shared library (libkbolt) that implements
 common interface between the modules and the system-wide bolt daemon,
 which does the actual hard work of talking to the kernel.
 
+%description -l pl.UTF-8
+Ten pakiet zawiera moduł ustawień i moduł KDED to obsługiwania
+autoryzacji urządzeń Thunderbolt podłączonych do komputera. Jest też
+biblioteka współdzielona (libkbolt), która implementuje wspólny
+interfejs między modułami i systemowym demonem bolt. Bolt wykonuje
+ciężką pracę dogadując się z kernelem.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
